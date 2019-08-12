@@ -1,0 +1,104 @@
+html {
+	background: url(../images/photo1.jpg);
+	background-repeat:  no-repeat center center fixed; /*prevents from repeating background*/
+    background-size: cover;/*specify the size of background image*/
+    font-family: 'Helvetica Neue', sans-serif;
+}	
+ .header {
+ 	text-align: center;
+    text-shadow: transparent;
+    color: white;
+    font-size: 40px;
+
+ }
+
+ .header h2 {
+    font-family: trebuchet ms;
+    color: #FF0000;
+    padding: 3px; 
+    margin-bottom: 10px;
+    background: linear-gradient(to left,#151515,#1B0A2A,#2471a3,#00FF00);
+    -webkit-text-fill-color: transparent;/*makes the header bar transparent*/
+    -webkit-background-clip: text;
+}  
+
+
+.nav ul {
+	float:right;/*setting the navigation bar in the right side*/
+	padding-left: 7px;
+	padding-right: 15px;
+	justify-content: flex-end;
+}
+
+.nav ul li {
+	display: inline-flex;
+	padding: 8px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+
+}
+.nav ul li a
+ {
+	text-decoration: none;
+	color: #060605;
+    font-family: serif;
+
+}
+
+.nav ul li a:hover{/*adding hover effect for navigation bar*/
+	background: #e8f6f3;
+	border: 1px solid black;
+	padding : 3px 5px;
+}
+
+.prof-box {/*editing the profile box*/
+	width: 300px;
+	height: 300px;
+	border-radius: 5%;
+	color: #FFF;
+	background: rgba(0,0,0,0.2);
+	margin:0 auto;
+	margin-top:90px;
+	padding: 25px;
+	text-align: center;
+	 
+
+}
+
+.prof-box h4{
+	 font-family: trebuchet ms;
+    color: #FF0000;
+    padding: 3px; 
+    margin-bottom: 10px;
+    background: linear-gradient(to left,#151515,#1B0A2A,#2471a3,#00FF00);
+    -webkit-text-fill-color: transparent;/*makes the header bar transparent*/
+    -webkit-background-clip: text;
+}
+.prof-pic {/*editing profile picture*/
+	width: 270px;
+	height: 180px;
+	border-radius: 50%;
+}
+
+
+ 
+.footer {/*editing the footer*/
+    text-align: center;
+    color: white;
+    font-size: 10px;
+} 
+.footer h2 {
+    font-family: trebuchet ms;
+    color: black;
+    padding: 3px; 
+    margin-bottom: 10px;
+}
+@media screen and (max-width: 600px) {/*For making page responsive with max-width 600px*/
+	.header{font-size: 20px;}
+	.nav ul li{ width: 60; margin-bottom: 1%; padding: 1%; }
+	.nav ul li a{flex-direction: column; font-size: 15px;}
+	.prof-box{ width: 210px; height: 264px; position: center;}
+	.prof-box h1{font-size: 15px;}
+	.prof-box h4{font-size: 10px;}
+	.prof-pic{width: 150px; height: 130px;}
+	.footer{font-size: 10px; position: bottom;}

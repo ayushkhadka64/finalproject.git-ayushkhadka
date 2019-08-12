@@ -1,0 +1,54 @@
+
+html {
+	background: url(../images/plain3.jpg);/* adding the background image*/
+	background-repeat:  no-repeat center center fixed; 
+    background-size: cover;
+    font-family: 'Helvetica Neue', sans-serif;
+}	
+.header a{
+    text-decoration: none;
+    font-size: 20px;
+    color:  #c0392b;
+
+
+}
+.header a:hover{/*adding hover*/
+    background: #e8f6f3;/*background color at the time of hover*/
+    border: 1px solid black;
+     padding : 3px 5px;
+ 
+}
+img{
+float:right;/*setting the image at right side*/
+
+}
+h1{
+    font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter;
+    font-size: 50px;
+
+}
+p {
+    font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter;
+    font-size: 20px;
+}
+ul li{
+    font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter;
+    font-size: 20px;
+}
+.footer {/*editing the footer*/
+    text-align: center;
+    text-shadow: transparent;
+    color: white;
+    font-size: 10px;
+} 
+.footer h2 {
+    font-family: trebuchet ms;
+    color: black;
+    padding: 3px; 
+    margin-bottom: 10px;
+}
+@media screen and (max-width: 600px) {/**For making page responsive with max-width 600px*/
+
+    .container{ width: 60; height:50; margin-bottom: 1%; padding: 1%; }
+    .container h1{flex-direction: column;}
+    .footer{font-size: 10px;}

@@ -1,0 +1,67 @@
+
+html {
+	background: url(../images/plain3.jpg);
+	background-repeat:  no-repeat center center fixed; 
+    background-size: cover;
+    font-family: 'Helvetica Neue', sans-serif;
+}	
+.header a{
+    text-decoration: none;
+    font-size: 20px;
+    color:  #c0392b;
+
+
+}
+.header a:hover{/*adding hover*/
+    background: #e8f6f3;/*background color at the time of hover*/
+    border: 1px solid black;
+     padding : 3px 5px;
+ 
+}
+
+
+
+h1{
+    font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter;
+    font-size: 50px;
+
+}
+h3{
+      font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter;
+    font-size: 20px;
+}
+h4{
+      font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter;
+    font-size: 17px;
+
+
+}
+.center{/* editing the centre class*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    height: 60%;
+}
+p {
+    font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter;
+    font-size: 17px;
+}
+
+.footer {/*editing the footer*/
+    text-align: center;
+    text-shadow: transparent;
+    color: white;
+    font-size: 10px;
+} 
+.footer h2 {
+    font-family: trebuchet ms;
+    color: black;
+    padding: 3px; 
+    margin-bottom: 10px;
+}
+@media screen and (max-width: 600px) {/**For making page responsive with max-width 600px*/
+
+    .container{ width: 60; height:50; margin-bottom: 1%; padding: 1%; }
+    .container h1{flex-direction: column;}
+    .footer{font-size: 10px;}

@@ -1,0 +1,67 @@
+html {
+   
+    background-repeat:  no-repeat center center fixed; 
+    background-size: cover;
+    font-family: 'Helvetica Neue', sans-serif;
+}   
+.header a{
+    text-decoration: none;
+    font-size: 20px;
+    color:  #c0392b;
+
+
+}
+.header a:hover{/*adding hover*/
+    background: #e8f6f3;/*background color at the time of hover*/
+    border: 1px solid black;
+     padding : 3px 5px;
+ 
+}
+
+.column {/*editing column*/
+    float: left;
+    width: 33.33%;
+    margin-left: 70px;
+    margin-right: 70px;
+    padding: 17px;
+}
+.row::after{
+    content: "";
+    clear: right;
+    display: table;
+}
+.row{
+    margin-top: 30px;
+    float: left;
+    display: flex;
+    flex-direction: row-reverse;
+}
+fieldset {
+    border: medium none !important;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+
+}
+
+.footer {
+    text-align: center;
+    color: white;
+    font-size: 10px;
+} 
+.footer h2 {
+    font-family: trebuchet ms;
+    color: black;
+    padding: 3px; 
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 600px) {/**For making page responsive with max-width 600px*/
+    .header{font-size: 20px;}
+    .column{
+        width: 100%;
+    }
+    .footer{font-size: 10px; position: bottom;}
